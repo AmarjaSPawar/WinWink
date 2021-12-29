@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-landingpage',
+  templateUrl: './landingpage.component.html',
+  styleUrls: ['./landingpage.component.css']
 })
-export class AppComponent {
+export class LandingpageComponent implements OnInit {
+  ngOnInit(): void {
+  }
   counter=0;
   title = 'WinWink';
   data: any =
@@ -95,4 +97,5 @@ export class AppComponent {
       panel.style.maxHeight = panel.scrollHeight + "px";
     }
 }
+
 }
